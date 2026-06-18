@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('inverters-config',{
+        category: 'ECU',
+        color: '#a6bbcf',
+        defaults: {
+            ip: {value:""},
+            port: {value: ""}
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"ecu-inverters-config";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="inverters-config">
+    <div class="form-row">
+        <label for="node-input-ip"><i class="fa fa-tag"></i>IP</label>
+        <input type="text" id="node-input-ip" placeholder="IP">
+    </div>
+    <div class="form-row">
+        <label for="node-input-port"><i class="fa fa-tag"></i>Port</label>
+        <input type="text" id="node-input-port" placeholder="Port">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="inverters-config">
+    <p>A config node for ecu-inverters-query node</p>
+</script>

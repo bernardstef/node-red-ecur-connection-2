@@ -1,0 +1,35 @@
+{
+  "name": "@okonek83/node-red-ecur-connection",
+  "version": "0.1.2",
+  "description": "Nodde-RED module for reading data from APsystems devices",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "keywords": [ "node-red", "ap systems", "apsystems", "solar", "inverter", "ecu", "ecur", "ecu-r" ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "binascii": "^0.0.2"
+  },
+  "bugs": {
+    "email": "jandominikokonski@gmail.com"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1"
+  },
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "inverters-query": "inverters-query.js",
+      "inverters-config": "inverters-config.js"
+    }
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

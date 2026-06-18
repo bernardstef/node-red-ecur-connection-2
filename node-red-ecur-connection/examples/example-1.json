@@ -1,0 +1,81 @@
+[
+    {
+        "id": "3f153d52ced3406e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0f4c82faee32fde4",
+        "type": "inverters-query",
+        "z": "3f153d52ced3406e",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "e634cacf011d5144"
+            ]
+        ]
+    },
+    {
+        "id": "4818186561107460",
+        "type": "inverters-config",
+        "z": "3f153d52ced3406e",
+        "ip": "",
+        "port": "",
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "0f4c82faee32fde4"
+            ]
+        ]
+    },
+    {
+        "id": "6d8d03a3f491e818",
+        "type": "inject",
+        "z": "3f153d52ced3406e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "4818186561107460"
+            ]
+        ]
+    },
+    {
+        "id": "e634cacf011d5144",
+        "type": "debug",
+        "z": "3f153d52ced3406e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 460,
+        "wires": []
+    }
+]

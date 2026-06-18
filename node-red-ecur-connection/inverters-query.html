@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    RED.nodes.registerType('inverters-query',{
+        category: 'ECU',
+        color: '#a6bbcf',
+        defaults: {
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"ecu-inverters-query";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="inverters-query">
+    
+</script>
+
+<script type="text/html" data-help-name="inverters-query">
+    <p>A node that queries the APSystems ECU and returs the data</p>
+</script>
