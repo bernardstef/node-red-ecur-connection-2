@@ -1,3 +1,9 @@
+A deployer par dessus /root/.node-red/node_modules/@okonek83/node-red-ecur-connection/
+
+
+Répare un problème de conversion de variables
+
+
 
 If you have a solar array and you use APsystems inverters, in combination with their ECU-R device, these nodes will allow you to connect to the ECU and read the data from it, so that you can track the production of your solar panels.
 
